@@ -1,0 +1,79 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - course
+  - moodi
+  - faculty
+  - placements
+  - infra
+  - diff_iitd
+
+
+
+
+
+
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_course:
+  - text: "IIT Bombay has a lot of very interesting coourses taught by the best faculty.\
+  \ There is a reasonable amount of freedom when it comes to taking courses of other departments\
+  \ as well. An ideal environment to explore!"
+
+  utter_moodi:
+  - text: "Mood Indigo, affectionately known as MoodI or MI, is the cultural and signature festival\
+  \ of Indian Institute of Technology Bombay. It will be held on 18th to 21st December in 2023.\
+  \ Started in 1971 by a group of students, it has attracted considerable media attention and numerous\
+  \ sponsors over time. Mood Indigo is also held in over 4000+ colleges and universities before ending\
+  \ in IIT Bombay."
+
+  utter_faculty:
+  - text: "The teachers here are the best that any institute can have, the courses are pretty much inclined\
+  \ towards the industry and also is not too core ot too non-core. It also focuses on the overall buildup of\
+   the student and makes them ready to face any challenges in life."
+
+  utter_placements:
+  - text: "A lot of on campus internships are given here in 3rd year as well as 2nd year internships are also\
+  \ given. The placements here are superb, it has the best return of investment in the whole country having the\
+  \ best placement cell and a large groups of companies on board."
+
+  utter_infra:
+  - text: "When it comes to the hostel, seniors hostel here are not in decent quality, freshers hostel are\
+  \ good but final year and PG student hostels are just superb."
+
+  utter_diff_iitd:
+  - text: "IITD boasts a higher nirf ranking than IITB, yet the top 60 ranks of JEE Advanced year after year\
+  \ prefer completing their bachelors degree and IITB. IT is impossible to compare them..."
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

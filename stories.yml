@@ -1,0 +1,72 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: course_info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: course
+  - action: utter_course
+
+- story: moodi_info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: moodi
+  - action: utter_moodi
+
+- story: faculty_info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faculty
+  - action: utter_faculty
+
+- story: placements_info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: placements
+  - action: utter_placements
+
+- story: infra_info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: infra
+  - action: utter_infra
+
+- story: diff_iitd_info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: diff_iitd
+  - action: utter_diff_iitd
