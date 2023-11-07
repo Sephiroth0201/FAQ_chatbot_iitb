@@ -1,6 +1,6 @@
 # FAQ_chatbot_iitb
 I have implemented a chatbot that answers questions that people generally have about IITB, using the RASA Open Source framework.
-After creating a virtual environment with python 3.6 and installing and set- ting up the basic RASA model on it, I started editing the training data in order to suit my purpose.
+After creating a virtual environment with python 3.6 and installing and setting up the basic RASA model on it, I started editing the training data in order to suit my purpose.
 The bot is designed to answer questions a JEE aspirant might have about IITB. Examples:
 1. How are the courses at IITB?
 2. Is IITB better than IITD?
